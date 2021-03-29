@@ -1,0 +1,7 @@
+/vendor/
+/node_modules/
+*.zip
+*.log
+/dist/
+.DS_Store
+/app/bundle/
