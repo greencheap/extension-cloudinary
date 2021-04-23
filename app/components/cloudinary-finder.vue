@@ -33,8 +33,8 @@ const CloudinaryFinder = {
         const ref = this;
         this.cloudinary = cloudinary.openMediaLibrary(
             {
-                cloud_name: "dwmejslx5",
-                api_key: "989486627184147",
+                cloud_name: this.packageConfig.cloud_name,
+                api_key: this.packageConfig.api_key,
                 remove_header: true,
                 multiple: false,
                 max_files: 8,
@@ -43,7 +43,6 @@ const CloudinaryFinder = {
             {
                 insertHandler: function (data) {
                     data.assets.forEach((asset) => {
-                        console.log(asset);
                         if (_.hasIn(asset, "derived")) {
                             ref.setImage(asset.derived[0].secure_url);
                             return;

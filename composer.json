@@ -1,7 +1,7 @@
 {
     "name": "greencheap/cloudinary",
     "type": "greencheap-extension",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "title": "Cloudinary",
     "description": "It is a plugin that allows you to draw images from Cloudinary site.",
     "license": "MIT",
